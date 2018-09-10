@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Docment </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-3 column margintop20">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="dropdown-submenu active">
+                    <a tabindex="-1" href="#">Client Advice</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu"><a tabindex="-1" href="#">Pre-advice</a></li>
+                        <li class="dropdown-submenu"><a href="#">Strategy & Technical</a></li>
+                        <li class="dropdown-submenu"><a href="#">Research</a>
+                            <ul class="dropdown-menu parent">
+                                <li style=" border-bottom: 1px solid #ccc;">
+                                    <a href="#">
+                                        Ahihi
+                                        <span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+                                        <span aria-hidden="true" class="glyphicon glyphicon-minus" style="display:none;"></span>
+                                    </a>
+                                    <ul class="child">
+                                        <li style="padding:10px 15px;">Platforms</li>
+                                        <li style="padding: 10px 15px;">Managed Funds</li>
+                                        <li style="padding: 10px 15px;">Wealth Protection</li>
+                                        <li style="padding: 10px 15px;">Listed Securities</li>
+                                        <li style="padding: 10px 15px;">Wealth Protection</li>
+                                        <li style="padding: 10px 15px;">Listed Securities</li>
+                                        <li style="padding: 10px 15px;">Listed Securities</li>
+                                    </ul>
+                                </li>
+                                <li style=" border-bottom: 1px solid #ccc;"><a href="#">Model Portfolios</a></li>
+                                <li style=" border-bottom: 1px solid #ccc;"><a href="#">Non-approved Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu active">
+                            <a href="#">APL & Products</a>
+                            <ul class="dropdown-menu parent">
+                                <li style=" border-bottom: 1px solid #ccc;">
+                                    <a href="#">
+                                        Approved Product List
+                                        <span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+                                        <span aria-hidden="true" class="glyphicon glyphicon-minus" style="display:none;"></span>
+                                    </a>
+                                    <ul class="child">
+                                        <li style="padding:10px 15px;">Platforms</li>
+                                        <li style="padding: 10px 15px;">Managed Funds</li>
+                                        <li style="padding: 10px 15px;">Wealth Protection</li>
+                                        <li style="padding: 10px 15px;">Listed Securities</li>
+                                        <li style="padding: 10px 15px;">Wealth Protection</li>
+                                        <li style="padding: 10px 15px;">Listed Securities</li>
+                                        <li style="padding: 10px 15px;">Listed Securities</li>
+                                    </ul>
+                                </li>
+                                <li style=" border-bottom: 1px solid #ccc;"><a href="#">Model Portfolios</a></li>
+                                <li style=" border-bottom: 1px solid #ccc;"><a href="#">Non-approved Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a href="#">Implementation</a></li>
+                        <li class="dropdown-submenu"><a href="#">Review</a></li>
+                        <li class="dropdown-submenu"><a href="#">Execution Only</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu"><a href="#">Personal Development</a></li>
+                <li class="dropdown-submenu"><a href="#">Practice</a></li>
+                <li class="dropdown-submenu"><a href="#">News</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    $('.child').hide(); //Hide children by default
+
+    $('.parent').children().click(function() {
+        event.preventDefault();
+        $(this).children('.child').slideToggle('slow');
+        $(this).find('span').toggle();
+    });
+    </script>
+</body>
+
+</html>
