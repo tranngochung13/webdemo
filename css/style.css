@@ -1,0 +1,33 @@
+ul {
+    width: 250px;
+}
+
+ul li {
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    padding: 0px 10px;
+    background: pink;
+    border: solid 1px red;
+    border-bottom: none;
+    position: relative;
+}
+
+ul li:last-child {
+    border-bottom: solid 1px red;
+}
+
+ul li ul {
+    position: absolute;
+    top: -1px;
+    right: -250px;
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+.remove-underline{
+    text-decoration: none;
+}
