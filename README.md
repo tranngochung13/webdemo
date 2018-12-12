@@ -1,4 +1,5 @@
-```
+﻿```
+git config --global user.name "tran ngoc hung"
 
 git add .    // Thêm file
 
